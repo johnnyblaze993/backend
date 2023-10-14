@@ -10,15 +10,15 @@ micronaut:
           secret:
             generator:
               secret: ${JWT_GENERATOR_SIGNATURE_SECRET:pleaseChangeThisSecretForANewOne}
-datasources:
-  default:
-    url: jdbc:postgresql://db:5432/postgres
-    driver-class-name: org.postgresql.Driver
-    username: postgres
-    password: mysecretpassword
 # datasources:
 #   default:
-#     url: jdbc:postgresql://localhost:5432/pokemondb
+#     url: jdbc:postgresql://db:5432/postgres
 #     driver-class-name: org.postgresql.Driver
 #     username: postgres
 #     password: mysecretpassword
+datasources:
+  default:
+    url: jdbc:postgresql://localhost:5432/pokemondb
+    driver-class-name: org.postgresql.Driver
+    username: postgres
+    password: mysecretpassword
